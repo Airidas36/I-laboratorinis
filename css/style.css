@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+header
+{
+    background-image: url('img/background.png');
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header img
+{
+    float: left;
+    margin-top: 35px;
+    margin-left: 300px;
+}
+
+.main-nav
+{
+    float: left;
+    list-style:none;
+    margin-top: 55px;
+    margin-left: 25px;
+    word-spacing: 2em;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-style: bold;
+}
+
+.main-nav li.active a
+{
+    border-bottom: 4px solid #fff;
+}
+
+.main-nav li a:hover
+{
+    border-bottom: 4px solid #fff;
+}
+
+.signup
+{
+    float:right;
+    margin-top: 45px;
+    margin-right: 200px;
+}
+
+header button
+{
+    font-size: 16px;
+    display: inline-block;
+	padding: 15px 25px 15px 25px;
+	border-radius: 5px;
+	background: none;
+}
+
+header button[reversed] 
+{
+	background: #fff;
+	font-weight: bolder;
+	padding: 15px 45px 15px 45px;
+	color: rgba(25,56,200,1);
+}
