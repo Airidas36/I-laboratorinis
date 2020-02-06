@@ -9,7 +9,6 @@ header
 {
     background-image: url('img/background.png');
     height: 100vh;
-    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -58,17 +57,30 @@ header img
 .signup
 {
     float:right;
-    margin-top: 45px;
-    margin-right: 200px;
+    margin-top: 39px;
+    margin-right: 300px;
 }
 
 header button
 {
     font-size: 16px;
+    color: white;
     display: inline-block;
 	padding: 15px 25px 15px 25px;
-	border-radius: 5px;
+    border-radius: 5px;
+    border-color: transparent;
 	background: none;
+}
+
+header button:hover
+{
+    background: rgb(7, 40, 184);
+    border-color: rgb(9, 40, 179);
+}
+
+header button[reversed]:hover
+{
+    background-color: rgb(209, 97, 97);
 }
 
 header button[reversed] 
