@@ -1,0 +1,173 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+@font-face
+{
+    font-family: "MuseoSans-700";
+    src:url(fonts/Museo700-Regular.otf);
+}
+
+@font-face
+{
+    font-family: "MuseoSans-900";
+    src:url(fonts/museo-sans-900.woff);
+}
+
+body
+{
+    background-image: url(css/img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:auto;
+    min-height: 100%;
+}
+
+.logo
+{
+    float: none;
+    margin-top: 40px;
+    margin-left: 240px;
+}
+
+.main-nav
+{
+    float: none;
+    list-style:none;
+    margin-top: -37px;
+    margin-left: 450px;
+    word-spacing: 2em;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-style: bold;
+}
+
+.main-nav li.active a
+{
+    border-bottom: 4px solid #fff;
+}
+
+.main-nav li a:hover
+{
+    border-bottom: 4px solid #fff;
+}
+
+.signup
+{
+    float:none;
+    margin-top:-35px;
+    margin-left: 1100px;
+}
+
+header button
+{
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+	padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    border-color: transparent;
+	background: none;
+}
+
+header button:hover
+{
+    background: rgb(7, 40, 184);
+    border-color: rgb(9, 40, 179);
+}
+
+header button[reversed]:hover
+{
+    background-color: rgb(209, 97, 97);
+}
+
+header button[reversed] 
+{
+	background: #fff;
+	font-weight: bolder;
+	padding: 15px 45px 15px 45px;
+	color: rgba(25,56,200,1);
+}
+
+.content h1
+{
+    color:white;
+    float:center;
+    font-size: 80px;
+    font-family:'MuseoSans-900';
+    margin-top:80px;
+    margin-left:240px;
+}
+
+.content p
+{
+    color:white;
+    float:center;
+    font-size: 20px;
+    font-family: "MuseoSans-700";
+    margin-top:10px;
+    margin-left:240px;
+}
+
+.create button
+{
+    float:center;
+    margin-top:50px;
+    margin-left:240px;
+    border-radius: 5px;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(238, 101, 101);
+    border-color: transparent;
+    font-family: "MuseoSans-700";
+    font-size: 20px;
+    color:white;
+}
+
+.page
+{
+    float:center bottom;
+    border-radius: 5px;
+    margin-top:60px;
+    margin-left:240px;
+}
+
+.page input[type="radio"]:checked {
+	background-color: #0043ff;
+	top: 12.5px;
+	height: 20px;
+    width: 20px;
+	border: 5px solid #f7bb07;
+}
+
+.page input[type="radio"]
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+
+    background-color: #4677ff;
+    color: #4677ff;
+    top: 10px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    border-radius: 100%;
+    cursor: pointer;     
+    margin-right: 20px;
+    outline: none;
+}
