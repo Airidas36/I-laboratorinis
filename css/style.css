@@ -15,15 +15,6 @@
     src:url(fonts/museo-sans-900.woff);
 }
 
-body
-{
-    background-image: url(css/img/background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:auto;
-    min-height: 100%;
-}
-
 .logo
 {
     float: none;
