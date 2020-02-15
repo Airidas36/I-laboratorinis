@@ -2,60 +2,62 @@
 <html>
     <head>
         <meta charset="UTF-8">
+       
         <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+        <link  rel="stylesheet" type="text/css" href="css/style.css">
         <title>Website</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-        <style>
-            body 
-            {
-                margin: 0;
-                padding: 0;
-              background: url(css/img/background.png);
-              background-repeat: no-repeat;
-              background-size: auto;
-            }
-        </style>
     </head>
     <body>
-        <header> 
-            <nav class="row">
-                <div class="logo">
-                    <img src="css/img/logo.png">
-                </div>
-                    <ul class="main-nav">
-                        <li class="active"><a href=""> HOME </a></li>
-                        <li><a href=""> PRODUCTS </a></li>
-                        <li><a href=""> TEMPLATES </a></li>
-                        <li><a href=""> PRICING </a></li>
-                    </ul>
-                    <div class="signup">
-                         <button> SIGN IN </button>
-                         <button reversed> SIGN UP</button>
-                    </div>
-            </nav>
-        </header>
-        <div class = "content">
-            <h1> 
-                Create Stunning <br> Visual Media
-            </h1>
-            <p> 
-                Super simple tool to create trendy videos and pictures <br> for your ads, social media, blogs and websites.<br>
-                Make your project stand out!
-            </p>
+        <nav class= "navbar navbar-expand-md sticky-top">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse_target">
+             <a class="navbar-brand" href = "index.html">  <img src="C:\Users\Airidas\Documents\I-laboratorinis\css\img\logo.png"> </a>
+             <ul class ="navbar-nav nav-left">
+                <li class="nav-item active"><a class="nav-link" href = "#"> HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href = "#"> PRODUCTS</a></li>
+                <li class="nav-item"><a class="nav-link" href = "#"> TEMPLATES</a></li>
+                <li class="nav-item"><a class="nav-link" href = "#"> PRICING</a></li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <button class="sign-in">SIGN IN</button> 
+                <button class="sign-up">SIGN UP</button> 
+            </ul>
         </div>
+        </nav>
+
+        <main id="content" class="group" role="main">
+            <article>
+                <section>
+                    <h1> 
+                        Create Stunning <br> Visual Media
+                    </h1>
+                    <p> 
+                        Super simple tool to create trendy videos and pictures <br> for your ads, social media, blogs and websites.<br>
+                        Make your project stand out!
+                    </p>
+                </section>
+            </article>
+        </main>
         <div class = "create">
             <button>
             Create Design →
             </button>
         </div>
-        
+       
+     <footer>
+         <div class = "page">
+             <input type="radio", name="select" checked>
+             <input type="radio", name="select">
+             <input type="radio", name="select">
+             <input type="radio", name="select">
+         </div>
+        </footer>  
     </body>
-    <footer>
-        <div class = "page">
-            <input type="radio", name="select" checked>
-            <input type="radio", name="select">
-            <input type="radio", name="select">
-            <input type="radio", name="select">
-        </div>
-    </footer>
 </html>

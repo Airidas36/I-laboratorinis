@@ -1,7 +1,7 @@
 *
 {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 @font-face
 {
@@ -15,29 +15,45 @@
     src:url(fonts/museo-sans-900.woff);
 }
 
-
-.logo
+header
 {
-    float: none;
-    margin-top: 2%;
-    margin-left: 15%;
+    height: 100%;
 }
 
-.main-nav
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-brand
+{
+    float: none;
+    margin-top:-0.5%;
+}
+
+.navbar
+{
+    margin-left:14%;
+    margin-top:1%;
+}
+
+.navbar-nav.nav-left li
 {
     float: none;
     list-style:none;
-    margin-top: -2.2%;
-    margin-left: 30%;
-    word-spacing: 2em;
+    margin-left:5%;
+    word-spacing: 3em;
 }
 
-.main-nav li
-{
-    display: inline-block;
-}
-
-.main-nav li a
+.navbar-nav.nav-left li a
 {
     color: white;
     text-decoration: none;
@@ -45,58 +61,62 @@
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-style: bold;
+    display: inline-block;
 }
 
-.main-nav li.active a
+.navbar-nav li.active a
 {
     border-bottom: 4px solid #fff;
 }
 
-.main-nav li a:hover
+.navbar-nav li a:hover
 {
     border-bottom: 4px solid #fff;
 }
 
-.signup
+.nav.navbar-nav.ml-auto
 {
-    float:none;
-    margin-top:-2.2%;
-    margin-left: 70%;
+    margin-right: 23%;
+    margin-top:-0.5%;
 }
 
-header button
+.nav.navbar-nav.ml-auto button
 {
     font-size: 16px;
     color: white;
-    display: inline-block;
+    border-color: white; 
 	padding: 15px 25px 15px 25px;
     border-radius: 5px;
-    border-color: transparent;
-	background: none;
+    display: inline-block;
+    background: none;
+    border:transparent;
+    margin:0;
 }
 
-header button:hover
+.navbar-nav.ml-auto button.sign-in:hover
 {
     background: rgb(7, 40, 184);
     border-color: rgb(9, 40, 179);
     cursor:pointer;
 }
 
-header button[reversed]:hover
+.navbar-nav.ml-auto button.sign-up:hover
 {
-    background-color: rgb(209, 207, 207);
+    background-color: rgb(211, 211, 211);
+    cursor:pointer;
 }
 
-header button[reversed] 
+.navbar-nav.ml-auto button.sign-up
 {
 	background: #fff;
     font-weight: bolder;
     border-color: transparent;
 	padding: 15px 45px 15px 45px;
-	color: rgba(25,56,200,1);
+    color: rgba(25,56,200,1);
+    margin:0;
 }
 
-.content h1
+#content h1
 {
     color:white;
     float:center;
@@ -107,7 +127,7 @@ header button[reversed]
     position: relative;
 }
 
-.content p
+#content p
 {
     color:white;
     float:center;
