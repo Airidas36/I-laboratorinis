@@ -194,10 +194,10 @@ body
     outline: none;
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width:990px) {
     .nav.navbar-nav.ml-auto button{
         margin: 0.1em auto;
-        margin-left: 6%;
+        margin-left: 0%;
     }
     .nav.navbar-nav.nav-left li.active a {
         margin: 0.1em auto;
