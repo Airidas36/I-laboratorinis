@@ -49,7 +49,7 @@ body
 {
     float: none;
     list-style:none;
-    margin-left:5%;
+    margin-left:0%;
     word-spacing: 3em;
 }
 
@@ -78,6 +78,7 @@ body
 {
     margin-right: 23%;
     margin-top:-0.5%;
+    position: relative;
 }
 
 .nav.navbar-nav.ml-auto button
