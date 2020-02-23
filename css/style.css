@@ -94,22 +94,22 @@ body
     margin:0;
 }
 
-.navbar-nav.ml-auto button.sign-in:hover
+#signin:hover
 {
     background: rgb(7, 40, 184);
     border-color: rgb(9, 40, 179);
     cursor:pointer;
 }
 
-.navbar-nav.ml-auto button.sign-up:hover
+#signup:hover
 {
     background-color: rgb(211, 211, 211);
     cursor:pointer;
 }
 
-.navbar-nav.ml-auto button.sign-up
+#signup
 {
-	background: #fff;
+    background: #fff;
     font-weight: bolder;
     border-color: transparent;
 	padding: 15px 45px;
@@ -160,9 +160,8 @@ body
 
 .page
 {
-    float:center bottom;
     border-radius: 5px;
-    margin-top:2%;
+    margin-top:0%;
     margin-left:15.5%;
 }
 
@@ -195,9 +194,14 @@ body
 }
 
 @media all and (max-width:991px) {
-    .nav.navbar-nav.ml-auto button{
+    #signin{
         margin: 0.1em auto;
-        margin-left: 0%;
+        margin-left: -180%;
+    }
+    #signup
+    {
+        margin: 0.1em auto;
+        margin-left: -180%;
     }
     .nav.navbar-nav.nav-left li.active a {
         margin: 0.1em auto;
@@ -206,4 +210,24 @@ body
     .nav.navbar-nav.nav-left li a {
         margin: 0.1em auto;
     }
+}
+.container.jumbotron.text-center
+{
+    background-color: transparent;
+    padding: 5px 5px;
+    width:28%;
+    margin-top:2%;
+    justify-content: center;
+}
+
+#modalsignin
+{
+   background-color: blue;
+   margin-right:43%;
+}
+
+#agreement
+{
+    margin-top:-10%;
+    margin-left:5%;
 }
