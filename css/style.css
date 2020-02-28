@@ -1,60 +1,55 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
 }
-@font-face
-{
+
+@font-face {
     font-family: "MuseoSans-700";
-    src:url(fonts/Museo700-Regular.otf);
+    src: url(fonts/Museo700-Regular.otf);
 }
 
-@font-face
-{
+@font-face {
     font-family: "MuseoSans-900";
-    src:url(fonts/museo-sans-900.woff);
+    src: url(fonts/museo-sans-900.woff);
 }
 
-header
-{
+header {
     height: 100%;
 }
 
-body
-{
+body {
     margin: 0;
     padding: 0;
     background-image: url('img/background.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.navbar-brand
-{
+.navbar-brand {
     float: none;
-    margin-top:-0.5%;
+    margin-top: -0.5%;
+    min-height: fit-content;
 }
 
-.navbar
-{
-    margin-left:14%;
-    margin-top:1%;
+.navbar {
+    margin-left: 14%;
+    margin-top: 0%;
+    
 }
 
-.navbar-nav.nav-left li
-{
+.navbar-nav.nav-left li {
     float: none;
-    list-style:none;
-    margin-left:0%;
-    word-spacing: 3em;
+    list-style: none;   
+    border-bottom: 4px solid;
+    border-color: transparent;
+    padding: 0px 5px;
 }
 
-.navbar-nav.nav-left li a
-{
+.navbar-nav.nav-left li a {
     color: white;
     text-decoration: none;
     padding: 2px;
@@ -62,125 +57,106 @@ body
     font-size: 16px;
     font-style: bold;
     display: inline-block;
+    border-bottom: 4px solid;
+    border-color: transparent;
 }
 
-.navbar-nav li.active a
-{
+.navbar-nav li.active a {
     border-bottom: 4px solid #fff;
 }
 
-.navbar-nav li a:hover
-{
+.navbar-nav li a:hover {
     border-bottom: 4px solid #fff;
 }
 
-.nav.navbar-nav.ml-auto
+#logincontent
 {
-    margin-right: 23%;
-    margin-top:-0.5%;
-    position: relative;
+    margin-top:-2%;
 }
 
-.nav.navbar-nav.ml-auto button
+#logincontent button
 {
     font-size: 16px;
     color: white;
-    border-color: white; 
-	padding: 15px 25px; 
+    border-color: white;
+    padding: 15px 25px;
     border-radius: 5px;
     display: inline-block;
     background: none;
-    border:transparent;
-    margin:0;
+    border: transparent;
+}
+
+
+#signup:hover {
+    background-color: white;
+    cursor: pointer;
+    color: blue;
 }
 
 #signin:hover
 {
     background: rgb(7, 40, 184);
-    border-color: rgb(9, 40, 179);
     cursor:pointer;
 }
 
-#signup:hover
-{
-    background-color: rgb(211, 211, 211);
-    cursor:pointer;
-}
-
-#signup
-{
-    background: #fff;
-    font-weight: bolder;
-    border-color: transparent;
-	padding: 15px 45px;
-    color: rgba(25,56,200,1);
-    margin-left:0;
-}
-
-#content h1
-{
-    color:white;
-    float:center;
+#content h1 {
+    color: white;
+    float: center;
     font-size: 80px;
-    font-family:'MuseoSans-900';
-    margin-top:4%;
-    margin-left:15.5%;
+    font-family: 'MuseoSans-900';
+    margin-top: 4%;
+    margin-left: 15.5%;
     position: relative;
 }
 
-#content p
-{
-    color:white;
-    float:center;
+#content p {
+    color: white;
+    float: center;
     font-size: 20px;
     font-family: "MuseoSans-700";
-    margin-top:2%;
-    margin-left:15.5%;
+    margin-top: 2%;
+    margin-left: 15.5%;
 }
 
-.create button
-{
-    float:center;
-    margin-top:3%;
-    margin-left:15.3%;
+.create button {
+    float: center;
+    margin-top: 3%;
+    margin-left: 15.3%;
     border-radius: 19px;
     padding: 20px 50px 20px 50px;
     background-color: rgb(238, 101, 101);
     border-color: transparent;
     font-family: "MuseoSans-900";
     font-size: 20px;
-    color:white;
+    color: white;
 }
 
-.create button:hover
-{
+.create button:hover {
     background-color: rgb(241, 79, 79);
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.page
-{
+.page {
     border-radius: 5px;
-    margin-top:0%;
-    margin-left:15.5%;
+    margin-top: 0%;
+    margin-left: 15.5%;
+    padding-bottom: 20px;
 }
 
 .page input[type="radio"]:checked {
-	background-color: #0043ff;
-	top: 12.5px;
-	height: 20px;
+    background-color: #0043ff;
+    top: 12.5px;
+    height: 20px;
     width: 20px;
-	border: 5px solid #f7bb07;
+    border: 5px solid #f7bb07;
 }
 
-.page input[type="radio"]
-{
+.page input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     display: inline-block;
     position: relative;
-
     background-color: #4677ff;
     color: #4677ff;
     top: 10px;
@@ -188,20 +164,16 @@ body
     width: 15px;
     border: 0;
     border-radius: 100%;
-    cursor: pointer;     
+    cursor: pointer;
     margin-right: 2%;
     outline: none;
 }
 
-@media all and (max-width:991px) {
-    #signin{
-        margin: 0.1em auto;
-        margin-left: -180%;
-    }
-    #signup
-    {
-        margin: 0.1em auto;
-        margin-left: -180%;
+@media all and (max-width:1200px) {
+    .container.jumbotron.text-center {
+        margin-left: -2%;
+        margin-top: 0%!important;
+        max-width: 108px;
     }
     .nav.navbar-nav.nav-left li.active a {
         margin: 0.1em auto;
@@ -210,24 +182,65 @@ body
     .nav.navbar-nav.nav-left li a {
         margin: 0.1em auto;
     }
+    .iframe-container
+    {
+        margin-top:5%!important;
+        width: 70%;
+        height: 30%!important;
+        margin-left:28%!important;
+      }
+      .iframe-container iframe
+      {
+        top:0;
+        left: 0%;
+        width: 70%;
+      } 
 }
-.container.jumbotron.text-center
-{
+
+.container.jumbotron.text-center {
     background-color: transparent;
     padding: 5px 5px;
-    width:28%;
-    margin-top:2%;
+    width: 28%;
+    margin-top:2.3%!important;
+    margin-top: inherit;
     justify-content: center;
+    position: relative;
+    min-width: max-content;
 }
 
-#modalsignin
-{
-   background-color: blue;
-   margin-right:43%;
+#modalsignin {
+    background-color: blue;
+    margin-right: 43%;
 }
 
-#agreement
-{
-    margin-top:-10%;
-    margin-left:5%;
+#agreement {
+    margin-top: -10%;
+    margin-left: 5%;
 }
+
+#karusele {
+    margin-top: -2.5%;
+}
+
+.carousel-inner>.carousel-item>img {
+    height: 85.8vh;
+}
+
+#content h4 {
+    color: white;
+    float: center;
+    font-size: 27px;
+    font-family: "MuseoSans-700";
+    margin-top: 0%;
+    margin-left: 16%;
+}
+.iframe-container
+{
+    margin-left:18%;
+    margin-top:3%;
+}
+
+
+/* Jei noresiu nuimt ta background carousele, tai .navbar istrint position ir z index, 
+taip pat ir pakoreguot carouselExampleIndcicators margin-top,
+ir .carousel-inner>carousel-item>img z-index isimt ir pakoreguot height (kazkur 84vh)
