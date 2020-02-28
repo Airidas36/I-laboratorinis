@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <title>Website</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    </head>
-    <body>
-        <header> 
-            <nav class="row">
-                <div class="logo">
-                    <img src="css/img/logo.png">
-                    <ul class="main-nav">
-                        <li class="active"><a href=""> HOME </a></li>
-                        <li><a href=""> PRODUCTS </a></li>
-                        <li><a href=""> TEMPLATES </a></li>
-                        <li><a href=""> PRICING </a></li>
-                    </ul>
-                </nav>
-        <div class="signup">
-            <button> SIGN IN </button>
-            <button reversed> SIGN UP</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="includes/script.js"></script>
+</head>
+
+<body>
+    <button class="translate" id="en">En</button>
+    <button class="translate" id="lt">Lt</button>
+    <nav class="navbar navbar-expand-xl">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
+            <ul class="navbar-nav nav-left">
+                <li class="nav-item"><a class="nav-link" key="videos" href="videos.html"> VIDEOS</a></li>
+                <li class="nav-item"><a class="nav-link" key="templates" href="templates.html"> TEMPLATES</a></li>
+                <li class="nav-item"><a class="nav-link" key="pricing" href="pricing.html"> PRICING</a></li>
+                <li class="nav-item"><a class="nav-link" key="help" href="help.html"> HELP</a></li>
+                <li class="nav-item"><a class="nav-link" key="about" href="about.html"> ABOUT</a></li>
+            </ul>
+            <div class="container jumbotron text-center">
+                <ul class="nav navbar-nav ml-auto" id="logincontent">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal" id="signin" >SIGN
+                        IN</button>
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal" id="signup" >SIGN
+                        UP</button>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content" id="signinform">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" id="modalsignin"> Sign In</button>
+                </div>
+            </div>
         </div>
-        <h1>
-            Create Stunning <br> Visual Media
-        </h1> 
-        <p>
-            Super simple tool to create trendy videos and pictures <br> for your adds, social media, blogs and websites.<br>
-            Make your projects stand out!
-        </p>
-     </header>
-    </body>
+    </div>
+    <div class="modal fade" role="dialog" id="signupModal">
+        <div class="modal-dialog"> 
+            <div class="modal-content" id="signupform">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="username" name="username" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" id="modalsignup"> Create Account</button>
+                </div>
+                <div class="form-group form-check" id="agreement">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"> I agree with <a class="link" href="#">terms and conditions</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="content" class="group" role="main">
+        <article>
+            <section>
+                <h1><key='h1'>
+                    Create Stunning <br> Visual Media
+                </h1>
+                <p>
+                    Super simple tool to create trendy videos and pictures <br> for your ads, social media, blogs and websites.
+                    <br> Make your project stand out!
+                </p>
+            </section>
+        </article>
+    </main>
+    <div class="create">
+        <button>
+            Create Design ?
+        </button>
+    </div>
+
+    <footer>
+        <div class="page">
+            <input type="radio" , name="select" checked>
+            <input type="radio" , name="select">
+            <input type="radio" , name="select">
+            <input type="radio" , name="select">
+        </div>
+    </footer>
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
 </html>

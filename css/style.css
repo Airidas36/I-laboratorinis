@@ -1,92 +1,246 @@
-*
-{
+* {
+    padding: 0;
     margin: 0;
     padding: 0;
 }
 
+@font-face {
+    font-family: "MuseoSans-700";
+    src: url(fonts/Museo700-Regular.otf);
+}
 
-header
-{
+@font-face {
+    font-family: "MuseoSans-900";
+    src: url(fonts/museo-sans-900.woff);
+}
+
+header {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
     background-image: url('img/background.png');
-    height: 100vh;
-    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-header img
-{
-    float: left;
-    margin-top: 35px;
-    margin-left: 300px;
+.navbar-brand {
+    float: none;
+    margin-top: -0.5%;
+    min-height: fit-content;
 }
 
-.main-nav
-{
-    float: left;
-    list-style:none;
-    margin-top: 55px;
-    margin-left: 25px;
-    word-spacing: 2em;
+.navbar {
+    margin-left: 14%;
+    margin-top: 0%;
+    
 }
 
-.main-nav li
-{
-    display: inline-block;
+.navbar-nav.nav-left li {
+    float: none;
+    list-style: none;   
+    border-bottom: 4px solid;
+    border-color: transparent;
+    padding: 0px 5px;
 }
 
-.main-nav li a
-{
+.navbar-nav.nav-left li a {
     color: white;
     text-decoration: none;
     padding: 2px;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-style: bold;
+    display: inline-block;
+    border-bottom: 4px solid;
+    border-color: transparent;
 }
 
-.main-nav li.active a
-{
+.navbar-nav li.active a {
     border-bottom: 4px solid #fff;
 }
 
-.main-nav li a:hover
-{
+.navbar-nav li a:hover {
     border-bottom: 4px solid #fff;
 }
 
-.signup
+#logincontent
 {
-    float:right;
-    margin-top: 39px;
-    margin-right: 300px;
+    margin-top:-2%;
 }
 
-header button
+#logincontent button
 {
     font-size: 16px;
     color: white;
-    display: inline-block;
-	padding: 15px 25px 15px 25px;
+    border-color: white;
+    padding: 15px 25px;
     border-radius: 5px;
-    border-color: transparent;
-	background: none;
+    display: inline-block;
+    background: none;
+    border: transparent;
 }
 
-header button:hover
+
+#signup:hover {
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+
+#signin:hover
 {
     background: rgb(7, 40, 184);
-    border-color: rgb(9, 40, 179);
+    cursor:pointer;
 }
 
-header button[reversed]:hover
-{
-    background-color: rgb(209, 97, 97);
+#content h1 {
+    color: white;
+    float: center;
+    font-size: 80px;
+    font-family: 'MuseoSans-900';
+    margin-top: 4%;
+    margin-left: 15.5%;
+    position: relative;
 }
 
-header button[reversed] 
+#content p {
+    color: white;
+    float: center;
+    font-size: 20px;
+    font-family: "MuseoSans-700";
+    margin-top: 2%;
+    margin-left: 15.5%;
+}
+
+.create button {
+    float: center;
+    margin-top: 3%;
+    margin-left: 15.3%;
+    border-radius: 19px;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(238, 101, 101);
+    border-color: transparent;
+    font-family: "MuseoSans-900";
+    font-size: 20px;
+    color: white;
+}
+
+.create button:hover {
+    background-color: rgb(241, 79, 79);
+    cursor: pointer;
+}
+
+.page {
+    border-radius: 5px;
+    margin-top: 0%;
+    margin-left: 15.5%;
+    padding-bottom: 20px;
+}
+
+.page input[type="radio"]:checked {
+    background-color: #0043ff;
+    top: 12.5px;
+    height: 20px;
+    width: 20px;
+    border: 5px solid #f7bb07;
+}
+
+.page input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #4677ff;
+    color: #4677ff;
+    top: 10px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 2%;
+    outline: none;
+}
+
+@media all and (max-width:1200px) {
+    .container.jumbotron.text-center {
+        margin-left: -2%;
+        margin-top: 0%!important;
+        max-width: 108px;
+    }
+    .nav.navbar-nav.nav-left li.active a {
+        margin: 0.1em auto;
+        border-bottom: auto;
+    }
+    .nav.navbar-nav.nav-left li a {
+        margin: 0.1em auto;
+    }
+    .iframe-container
+    {
+        margin-top:5%!important;
+        width: 70%;
+        height: 30%!important;
+        margin-left:28%!important;
+      }
+      .iframe-container iframe
+      {
+        top:0;
+        left: 0%;
+        width: 70%;
+      } 
+}
+
+.container.jumbotron.text-center {
+    background-color: transparent;
+    padding: 5px 5px;
+    width: 28%;
+    margin-top:2.3%!important;
+    margin-top: inherit;
+    justify-content: center;
+    position: relative;
+    min-width: max-content;
+}
+
+#modalsignin {
+    background-color: blue;
+    margin-right: 43%;
+}
+
+#agreement {
+    margin-top: -10%;
+    margin-left: 5%;
+}
+
+#karusele {
+    margin-top: -2.5%;
+}
+
+.carousel-inner>.carousel-item>img {
+    height: 85.8vh;
+}
+
+#content h4 {
+    color: white;
+    float: center;
+    font-size: 27px;
+    font-family: "MuseoSans-700";
+    margin-top: 0%;
+    margin-left: 16%;
+}
+.iframe-container
 {
-	background: #fff;
-	font-weight: bolder;
-	padding: 15px 45px 15px 45px;
-	color: rgba(25,56,200,1);
+    margin-left:18%;
+    margin-top:3%;
+}
+#mynav
+{
+    min-width: fit-content;
 }
