@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-*
-{
-=======
 * {
     padding: 0;
->>>>>>> Stashed changes
     margin: 0;
     padding: 0;
 }
@@ -19,32 +14,6 @@
     src: url(fonts/museo-sans-900.woff);
 }
 
-<<<<<<< Updated upstream
-
-.logo
-{
-    float: none;
-    margin-top: 3%;
-    margin-left: 15%;
-}
-
-.main-nav
-{
-    float: none;
-    list-style:none;
-    margin-top: -2.2%;
-    margin-left: 450px;
-    word-spacing: 2em;
-}
-
-.main-nav li
-{
-    display: inline-block;
-}
-
-.main-nav li a
-{
-=======
 header {
     height: 100%;
 }
@@ -82,80 +51,12 @@ body {
 }
 
 .navbar-nav.nav-left li a {
->>>>>>> Stashed changes
     color: white;
     text-decoration: none;
     padding: 2px;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-style: bold;
-<<<<<<< Updated upstream
-}
-
-.main-nav li.active a
-{
-    border-bottom: 4px solid #fff;
-}
-
-.main-nav li a:hover
-{
-    border-bottom: 4px solid #fff;
-}
-
-.signup
-{
-    float:none;
-    margin-top:-2.5%;
-    margin-left: 70%;
-}
-
-header button
-{
-    font-size: 16px;
-    color: white;
-    display: inline-block;
-	padding: 15px 25px 15px 25px;
-    border-radius: 5px;
-    border-color: transparent;
-	background: none;
-}
-
-header button:hover
-{
-    background: rgb(7, 40, 184);
-    border-color: rgb(9, 40, 179);
-    cursor:pointer;
-}
-
-header button[reversed]:hover
-{
-    background-color: rgb(209, 207, 207);
-}
-
-header button[reversed] 
-{
-	background: #fff;
-    font-weight: bolder;
-    border-color: transparent;
-	padding: 15px 45px 15px 45px;
-	color: rgba(25,56,200,1);
-}
-
-.content h1
-{
-    color:white;
-    float:center;
-    font-size: 80px;
-    font-family:'MuseoSans-900';
-    margin-top:5%;
-    margin-left:15.5%;
-}
-
-.content p
-{
-    color:white;
-    float:center;
-=======
     display: inline-block;
     border-bottom: 4px solid;
     border-color: transparent;
@@ -212,25 +113,16 @@ header button[reversed]
 #content p {
     color: white;
     float: center;
->>>>>>> Stashed changes
     font-size: 20px;
     font-family: "MuseoSans-700";
     margin-top: 2%;
     margin-left: 15.5%;
 }
 
-<<<<<<< Updated upstream
-.create button
-{
-    float:center;
-    margin-top:3%;
-    margin-left:15.5%;
-=======
 .create button {
     float: center;
     margin-top: 3%;
     margin-left: 15.3%;
->>>>>>> Stashed changes
     border-radius: 19px;
     padding: 20px 50px 20px 50px;
     background-color: rgb(238, 101, 101);
@@ -273,12 +165,6 @@ header button[reversed]
     width: 15px;
     border: 0;
     border-radius: 100%;
-<<<<<<< Updated upstream
-    cursor: pointer;     
-    margin-right: 20px;
-    outline: none;
-}
-=======
     cursor: pointer;
     margin-right: 2%;
     outline: none;
@@ -354,9 +240,7 @@ header button[reversed]
     margin-left:18%;
     margin-top:3%;
 }
-
-
-/* Jei noresiu nuimt ta background carousele, tai .navbar istrint position ir z index, 
-taip pat ir pakoreguot carouselExampleIndcicators margin-top,
-ir .carousel-inner>carousel-item>img z-index isimt ir pakoreguot height (kazkur 84vh)
->>>>>>> Stashed changes
+#mynav
+{
+    min-width: fit-content;
+}
