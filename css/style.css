@@ -244,3 +244,38 @@ body {
 {
     min-width: fit-content;
 }
+
+#mytable caption
+{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#mytable
+{
+    min-width: fit-content;
+    width: 65%;
+    opacity: 0.5;
+    margin-left:16%;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+#myform
+{
+    background-color: white;
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    justify-content: center;
+}
+.invalid input:required:invalid {
+    background: #BE4C54;
+  }
+  
+  /* Mark valid inputs during .invalid state */
+  .invalid input:required:valid {
+    background: #17D654;
+  }
