@@ -262,15 +262,6 @@ body {
 background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
-#myform
-{
-    background-color: white;
-    width: 50%;
-    margin-left: 20%;
-    border-radius: 10px;
-    padding: 10px 10px;
-    justify-content: center;
-}
 .invalid input:required:invalid {
     background: #BE4C54;
   }
@@ -279,3 +270,59 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
   .invalid input:required:valid {
     background: #17D654;
   }
+
+ #dropdownMenu
+ {
+     background-color: transparent;
+     border: none;
+ }
+
+ #dropdownMenu:hover
+ {
+     background-color: rgb(33, 88, 240)
+ }
+
+ #dropmenu
+ {
+     background-color: white;
+     width: 40px!important;
+ }
+
+ #reportmain h1
+ {
+    background: linear-gradient(to right, rgb(255, 0, 0) -40%, #d9ff00 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;   
+     font-size: 70px;
+     font-family: "MuseoSans-900";
+ }
+
+ #reportmain h2
+ {
+    background: linear-gradient(to right, rgb(200, 255, 0) -40%, #ff00aa 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-family: "MuseoSans-700";
+ }
+
+ #reportmain
+ {
+     margin-left: 15%;
+ }
+ 
+ #reportmain button
+ {
+   margin-top: 5%;
+   width: 20%;
+   height: 7vh;
+   background: linear-gradient(to right, rgb(200, 255, 0) -20%, #ff00aa 100%);
+   border: none;
+   color: white;
+   font-weight: bold;
+ }
+
+ .navbar-nav
+ {
+     min-width: fit-content;
+ }

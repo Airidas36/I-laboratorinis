@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" , content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Website</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="includes/script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <button class="translate" id="en">En</button>
-    <button class="translate" id="lt">Lt</button>
+
     <nav class="navbar navbar-expand-xl">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
             <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
         </button>
         <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Languages
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu" id="dropmenu">
+                    <a class="dropdown-item" key = "en" id = "en"><span class="flag-icon flag-icon-gb"> </span> English</a>
+                    <a class="dropdown-item" key="lt" id = "lt"><span class="flag-icon flag-icon-lt"> </span> Lithuanian</a>
+                </div>
+            </div>
             <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
             <ul class="navbar-nav nav-left">
                 <li class="nav-item"><a class="nav-link" key="videos" href="videos.html"> VIDEOS</a></li>
@@ -28,9 +39,11 @@
             </ul>
             <div class="container jumbotron text-center">
                 <ul class="nav navbar-nav ml-auto" id="logincontent">
-                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal" key="signin" id="signin" >SIGN
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal"
+                        key="signin" id="signin">SIGN
                         IN</button>
-                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal" key="signup" id="signup" >SIGN
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal"
+                        key="signup" id="signup">SIGN
                         UP</button>
                 </ul>
             </div>
@@ -47,7 +60,8 @@
                         <input type="text" name="username" class="form-control" placeholder="Username" key='username'>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="Password" key="password">
+                        <input type="password" name="password" class="form-control" placeholder="Password"
+                            key="password">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -57,7 +71,7 @@
         </div>
     </div>
     <div class="modal fade" role="dialog" id="signupModal">
-        <div class="modal-dialog"> 
+        <div class="modal-dialog">
             <div class="modal-content" id="signupform">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -74,11 +88,13 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success" id="modalsignup" key="modalsignup"> Create Account</button>
+                    <button type="submit" class="btn btn-success" id="modalsignup" key="modalsignup"> Create
+                        Account</button>
                 </div>
                 <div class="form-group form-check" id="agreement">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1"> I agree with <a class="link" href="#">terms and conditions</a></label>
+                    <label class="form-check-label" for="exampleCheck1"> I agree with <a class="link" href="#">terms and
+                            conditions</a></label>
                 </div>
             </div>
         </div>
@@ -90,7 +106,8 @@
                     Create Stunning <br> Visual Media
                 </h1>
                 <p>
-                    Super simple tool to create trendy videos and pictures <br> for your ads, social media, blogs and websites.
+                    Super simple tool to create trendy videos and pictures <br> for your ads, social media, blogs and
+                    websites.
                     <br> Make your project stand out!
                 </p>
             </section>

@@ -28,7 +28,7 @@ var arrLang = {
     }
 };
 $(function(){
-    $('.translate').click(function(){
+    $('.dropdown-item').click(function(){
         var lang = $(this).attr('id');
 
         $('.nav-link').each(function(index, element){
