@@ -1,26 +1,46 @@
 var arrLang = {
     'en' : {
         'videos' : 'VIDEOS',
-        'templates' : 'TEMPLATES',
-        'pricing' : 'PRICING',
-        'help' : 'HELP',
-        'about' : 'ABOUT'
-
+        'tables' : 'TABLES',
+        'form' : 'FORM',
+        'xml' : 'XML',
+        'gallery' : 'GALLERY',
+        'list' : 'LIST',
+        'signin' : 'SIGN IN',
+        'signup' : 'SIGN UP',
+        'username' :'Username',
+        'password' : 'Password'
     },
     'lt' : {
         'videos' : 'VAIZDO IRAŠAI',
-        'templates' : 'ŠABLONAI',
-        'pricing' : 'KAINODARA',
-        'help' : 'PAGALBA',
-        'about' : 'APIE',
-        'h1' : 'AAAAAAAAAAAAA'
+        'tables' : 'LENTELĖS',
+        'form' : 'ANKETA',
+        'xml' : 'XML',
+        'gallery' : 'GALERIJA',
+        'list' : 'SĄRRAŠAS',
+        'h1' : 'aaaaaa',
+        'signin' : 'PRISIJUNGTI',
+        'signup' : 'UŽSIREGISTRUOTI',
+        'username' :'Prisijungimo vardas',
+        'password' : 'Slaptažodis',
+        'modalsignin':'Prisijungti',
+        'modalsignup':'Susikurti paskyrą'
     }
 };
-(function(){
+$(function(){
     $('.translate').click(function(){
         var lang = $(this).attr('id');
 
         $('.nav-link').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+        $('.button').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+        $('.modal-footer button').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+        $('.modal-footer button').each(function(index, element){
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
     });

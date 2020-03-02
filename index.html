@@ -28,9 +28,9 @@
             </ul>
             <div class="container jumbotron text-center">
                 <ul class="nav navbar-nav ml-auto" id="logincontent">
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal" id="signin" >SIGN
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal" key="signin" id="signin" >SIGN
                         IN</button>
-                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal" id="signup" >SIGN
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal" key="signup" id="signup" >SIGN
                         UP</button>
                 </ul>
             </div>
@@ -44,14 +44,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" name="username" class="form-control" placeholder="Username">
+                        <input type="text" name="username" class="form-control" placeholder="Username" key='username'>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="Password">
+                        <input type="password" name="password" class="form-control" placeholder="Password" key="password">
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success" id="modalsignin"> Sign In</button>
+                    <button type="submit" class="btn btn-success" id="modalsignin" key="modalsignin"> Sign In</button>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success" id="modalsignup"> Create Account</button>
+                    <button type="submit" class="btn btn-success" id="modalsignup" key="modalsignup"> Create Account</button>
                 </div>
                 <div class="form-group form-check" id="agreement">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -86,7 +86,7 @@
     <main id="content" class="group" role="main">
         <article>
             <section>
-                <h1><key='h1'>
+                <h1 key='h1'>
                     Create Stunning <br> Visual Media
                 </h1>
                 <p>

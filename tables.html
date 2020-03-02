@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <link  rel="stylesheet" type="text/css" href="css/style.css">
-        <style> body{background-image: url('css/img/lavonas.jpg');}</style>
-        <title>Website</title>
-    </head>
-    <body>
-        <nav class= "navbar navbar-expand-xl">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="collapse_target">
-             <a class="navbar-brand" href = "index.html">  <img src="css/img/logo.png"> </a>
-             <ul class ="navbar-nav nav-left">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="includes/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+            background-image: url('css/img/lavonas.jpg');
+        }
+    </style>
+    <title>Website</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
+            <ul class="navbar-nav nav-left">
                 <li class="nav-item"><a class="nav-link" key="videos" href="videos.html"> VIDEOS</a></li>
                 <li class="nav-item"><a class="nav-link" key="tables" href="tables.html"> TABLES</a></li>
                 <li class="nav-item"><a class="nav-link" key="form" href="form.html"> FORM</a></li>
@@ -24,9 +32,11 @@
             </ul>
             <div class="container jumbotron text-center">
                 <ul class="nav navbar-nav ml-auto" id="logincontent">
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal" id="signin">SIGN
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal"
+                        id="signin">SIGN
                         IN</button>
-                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal" id="signup">SIGN
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal"
+                        id="signup">SIGN
                         UP</button>
                 </ul>
             </div>
@@ -72,58 +82,59 @@
                         </div>
                         <div class="form-group form-check" id="agreement">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1" > I agree with <a class="link" href="#">terms and conditions</a></label>
+                            <label class="form-check-label" for="exampleCheck1"> I agree with <a class="link"
+                                    href="#">terms and conditions</a></label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </nav>
+    </nav>
 
-        <main id="content" class="group" role="main">
-            <div class = "table-responsive">
-                <table class="table table-hover table-dark" id="mytable">
-                    <caption>List of cars</caption>
-                    <thead>
-                      <tr>
+    <main id="content" class="group" role="main">
+        <div class="table-responsive">
+            <table class="table table-hover table-dark" id="mytable">
+                <caption>List of cars</caption>
+                <thead>
+                    <tr>
                         <th scope="col">#</th>
                         <th scope="col">Make</th>
                         <th scope="col">Model</th>
                         <th scope="col">Engine</th>
                         <th scope="col">Power output</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
                         <th scope="row">1</th>
                         <td>BMW</td>
                         <td>330ci</td>
                         <td>M54B30</td>
                         <td>170kW</td>
-                      </tr>
-                      <tr>
+                    </tr>
+                    <tr>
                         <th scope="row">2</th>
                         <td>SUBARU</td>
                         <td>Impreza</td>
                         <td>EJ25</td>
                         <td>92kW</td>
-                      </tr>
-                      <tr>
+                    </tr>
+                    <tr>
                         <th scope="row">3</th>
                         <td>HONDA</td>
                         <td>Civic</td>
                         <td>1.6 V-TEC</td>
                         <td>95kW</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-        </main>
-         
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
 </html>
