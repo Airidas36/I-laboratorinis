@@ -119,6 +119,15 @@ body {
     margin-left: 15.5%;
 }
 
+#content h1 span
+{
+    width: 700px;
+}
+
+#content p span
+{
+    width: 540px;
+}
 .create button {
     float: center;
     margin-top: 3%;

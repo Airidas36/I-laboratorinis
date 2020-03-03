@@ -1,3 +1,5 @@
+
+var str="Create Stunning Visual Media"
 var arrLang = {
     'en' : {
         'videos' : 'VIDEOS',
@@ -9,7 +11,9 @@ var arrLang = {
         'signin' : 'SIGN IN',
         'signup' : 'SIGN UP',
         'username' :'Username',
-        'password' : 'Password'
+        'password' : 'Password',
+        'p' : "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.",
+        'h1' : str
     },
     'lt' : {
         'videos' : 'VAIZDO IRAŠAI',
@@ -18,13 +22,15 @@ var arrLang = {
         'xml' : 'XML',
         'gallery' : 'GALERIJA',
         'list' : 'SĄRRAŠAS',
-        'h1' : 'aaaaaa',
+        'h1' : 'Sukurkite stulbinančią vizualią mediją',
         'signin' : 'PRISIJUNGTI',
         'signup' : 'UŽSIREGISTRUOTI',
         'username' :'Prisijungimo vardas',
         'password' : 'Slaptažodis',
         'modalsignin':'Prisijungti',
-        'modalsignup':'Susikurti paskyrą'
+        'modalsignup':'Susikurti paskyrą',
+        'p' : "Paprastas įrankis skirtas kurti vaizdo įrašus ir nuotraukas reklamoms, socialiniams tinklams, blogams ir tinklapiams.",
+        'p1' : "Sukurkite išskirtinį projektą!"
     }
 };
 $(function(){
@@ -41,6 +47,15 @@ $(function(){
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
         $('.modal-footer button').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+        $('.group h1 span').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+        $('.group p span').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+        $('placeholder').each(function(index, element){
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
     });
