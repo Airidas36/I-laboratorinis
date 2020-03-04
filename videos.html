@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <link  rel="stylesheet" type="text/css" href="css/style.css">
-        <script> src="script.js"</script>
-        <style> body{background-image: url('css/img/e46.jpg');}</style>
-        <title>Website</title>
-    </head>
-    <body>
-        <nav class= "navbar navbar-expand-xl">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="collapse_target">
-             <a class="navbar-brand" href = "index.html">  <img src="css/img/logo.png"> </a>
-             <ul class ="navbar-nav nav-left">
-                <li class="nav-item active"><a class="nav-link" href = "videos.html"> VIDEOS</a></li>
-                <li class="nav-item"><a class="nav-link" href = "templates.html"> TEMPLATES</a></li>
-                <li class="nav-item"><a class="nav-link" href = "pricing.html"> PRICING</a></li>
-                <li class="nav-item"><a class="nav-link" href = "help.html"> HELP</a></li>
-                <li class="nav-item"><a class="nav-link" href = "about.html"> ABOUT</a></li>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="includes/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('css/img/e46.jpg');
+        }
+    </style>
+    <title>Website</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Languages
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu" id="dropmenu">
+                    <a class="dropdown-item" key = "en" id = "en"><span class="flag-icon flag-icon-gb"> </span> English</a>
+                    <a class="dropdown-item" key="lt" id = "lt"><span class="flag-icon flag-icon-lt"> </span> Lithuanian</a>
+                </div>
+            </div>
+            <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
+            <ul class="navbar-nav nav-left">
+                <li class="nav-item"><a class="nav-link" key="videos" href="videos.html"> VIDEOS</a></li>
+                <li class="nav-item"><a class="nav-link" key="tables" href="tables.html"> TABLES</a></li>
+                <li class="nav-item"><a class="nav-link" key="form" href="form.html"> FORM</a></li>
+                <li class="nav-item"><a class="nav-link" key="xml" href="xml.html"> XML</a></li>
+                <li class="nav-item"><a class="nav-link" key="gallery" href="gallery.html"> GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" key="list" href="list.html"> LIST</a></li>
             </ul>
             <div class="container jumbotron text-center">
                 <ul class="nav navbar-nav ml-auto" id="logincontent">
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal" id="signin">SIGN
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal"
+                        key="signin" id="signin">SIGN
                         IN</button>
-                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal" id="signup">SIGN
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal"
+                        key="signup" id="signup">SIGN
                         UP</button>
                 </ul>
             </div>
@@ -72,49 +93,53 @@
                         </div>
                         <div class="form-group form-check" id="agreement">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1" > I agree with <a class="link" href="#">terms and conditions</a></label>
+                            <label class="form-check-label" for="exampleCheck1"> I agree with <a class="link"
+                                    href="#">terms and conditions</a></label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </nav> 
-        <div id="karusele" class="carousel slide" data-ride="carousel" data-interval="false">
-            <ol class="carousel-indicators">
-              <li data-target="#karusele" data-slide-to="0" class="active"></li>
-              <li data-target="#karusele" data-slide-to="1"></li>
-              <li data-target="#karusele" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="iframe-container" >
-                    <iframe width="1000px" height="500px" src ="https://www.youtube.com/embed/1PnVor36_40"id ="iframe"> </iframe>
+    </nav>
+    <div id="karusele" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#karusele" data-slide-to="0" class="active"></li>
+            <li data-target="#karusele" data-slide-to="1"></li>
+            <li data-target="#karusele" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="iframe-container">
+                    <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/1PnVor36_40" id="iframe">
+                    </iframe>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="iframe-container" >
-                    <iframe width="1000px" height="500px" src ="https://www.youtube.com/embed/Ukg_U3CnJWI"id ="iframe"> </iframe>
+                <div class="iframe-container">
+                    <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/Ukg_U3CnJWI" id="iframe">
+                    </iframe>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="iframe-container" >
-                    <iframe width="1000px" height="500px" src ="https://www.youtube.com/embed/bWPMSSsVdPk"id ="iframe"> </iframe>
+                <div class="iframe-container">
+                    <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/bWPMSSsVdPk" id="iframe">
+                    </iframe>
                 </div>
             </div>
-            </div>
-            <a class="carousel-control-prev" href="#karusele" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#karusele" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+        </div>
+        <a class="carousel-control-prev" href="#karusele" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#karusele" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
 </html>
