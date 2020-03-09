@@ -13,11 +13,6 @@
     font-family: "MuseoSans-900";
     src: url(fonts/museo-sans-900.woff);
 }
-
-header {
-    height: 100%;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -31,15 +26,17 @@ body {
 }
 
 .navbar-brand {
-    float: none;
-    margin-top: -0.5%;
+    margin-top: -1%;
     min-height: fit-content;
+}
+.navbar-brand img
+{
+    width: 150px;
 }
 
 .navbar {
-    margin-left: 14%;
+    margin-left: 10%;
     margin-top: 0%;
-    
 }
 
 .navbar-nav.nav-left li {
@@ -55,7 +52,7 @@ body {
     text-decoration: none;
     padding: 2px;
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: bold;
     display: inline-block;
     border-bottom: 4px solid;
@@ -115,13 +112,13 @@ body {
     float: center;
     font-size: 20px;
     font-family: "MuseoSans-700";
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 15.5%;
 }
 
 #content h1 span
 {
-    width: 700px;
+    width: 880px;
 }
 
 #content p span
@@ -205,6 +202,16 @@ body {
         left: 0%;
         width: 70%;
       } 
+      #dropdownMenu
+      {
+          margin-left:20%;
+          margin-top: -5rem!important;
+      }
+      #dropmenu
+      {
+          margin-left:19.5%;
+          margin-top: -1.3rem;
+      }
 }
 
 .container.jumbotron.text-center {
@@ -221,6 +228,15 @@ body {
 #modalsignin {
     background-color: blue;
     margin-right: 43%;
+}
+
+#signupform
+{
+    border-radius: 30px;
+}
+#loginform
+{
+    border-radius: 30px;
 }
 
 #agreement {
@@ -265,11 +281,12 @@ body {
 {
     min-width: fit-content;
     width: 65%;
-    opacity: 0.5;
     margin-left:16%;
+    opacity: 0.8;
     background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
+
 
 .invalid input:required:invalid {
     background: #BE4C54;
@@ -284,6 +301,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
  {
      background-color: transparent;
      border: none;
+     margin-top: -10%;
  }
 
  #dropdownMenu:hover
@@ -297,21 +315,38 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
      width: 40px!important;
  }
 
+ .dropdown-item:hover
+ {
+     cursor: pointer;
+ }
+
  #reportmain h1
  {
-    background: linear-gradient(to right, rgb(255, 0, 0) -40%, #d9ff00 60%);
+    background: linear-gradient(to right,#2600ff 20%, rgb(255, 0, 0) 60%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;   
      font-size: 70px;
+     font-weight: bold;
      font-family: "MuseoSans-900";
+ }
+
+ #reportmain h1 span
+ {
+     width: 1000px;
+ }
+
+ #reportmain h2 span
+ {
+    width:650px;
  }
 
  #reportmain h2
  {
-    background: linear-gradient(to right, rgb(200, 255, 0) -40%, #ff00aa 60%);
+    background: linear-gradient(to right, #2600ff 20%,rgb(255, 0, 0) 60%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     font-size: 50px;
+    font-weight: bold;
     font-family: "MuseoSans-700";
  }
 
@@ -335,3 +370,9 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
  {
      min-width: fit-content;
  }
+
+#content img
+{
+    min-width: fit-content;
+    min-height: fit-content;
+}

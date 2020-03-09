@@ -24,12 +24,13 @@
         <div class="collapse navbar-collapse" id="collapse_target">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                aria-haspopup="true" key="languages" aria-expanded="false">
                     Languages
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu" id="dropmenu">
-                    <a class="dropdown-item" key = "en" id = "en"><span class="flag-icon flag-icon-gb"> </span> English</a>
-                    <a class="dropdown-item" key="lt" id = "lt"><span class="flag-icon flag-icon-lt"> </span> Lithuanian</a>
+                    <a class="dropdown-item" key="en" id="en"><span class="flag-icon flag-icon-gb"> </span> English</a>
+                    <a class="dropdown-item" key="lt" id="lt"><span class="flag-icon flag-icon-lt"> </span>
+                        Lithuanian</a>
                 </div>
             </div>
             <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
@@ -59,14 +60,17 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
-                                <input type="text" name="username" class="form-control" placeholder="Username">
+                                <input type="text" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key='username'>
                             </div>
                             <div class="form-group">
-                                <input type="password" name="password" class="form-control" placeholder="Password">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" id="modalsignin"> Sign In</button>
+                            <button type="submit" class="btn btn-success" id="modalsignin" key="modalsignin"> Sign
+                                In</button>
                         </div>
                     </div>
                 </div>
@@ -79,51 +83,90 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
-                                <input type="text" name="email" class="form-control" placeholder="Email">
+                                <input type="text" data-translate="email_placeholder" name="email" class="form-control"
+                                    placeholder="Email" key="email">
                             </div>
                             <div class="form-group">
-                                <input type="username" name="username" class="form-control" placeholder="Username">
+                                <input type="username" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key="username">
                             </div>
                             <div class="form-group">
-                                <input type="password" name="password" class="form-control" placeholder="Password">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" id="modalsignup"> Create Account</button>
-                        </div>
-                        <div class="form-group form-check" id="agreement">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1"> I agree with <a class="link"
-                                    href="#">terms and conditions</a></label>
+                            <button type="submit" class="btn btn-success" id="modalsignup" key="modalsignup"> Create
+                                Account</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </nav>
 
     <main id="content" class="group" role="main">
-        <article>
-            <section>
-                <h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                    Duis id pharetra justo. Pellentesque semper mi in velit feugiat porta. <br>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br>
-                    Cras eros dolor, imperdiet sed porttitor eu, maximus ut quam.
-                    Vivamus iaculis nisl eu vulputate posuere. Nulla nec facilisis neque. <br>
-                    Quisque vel leo tellus. Vivamus ligula purus, eleifend ut neque eu, condimentum finibus ex.<br>
-                    Suspendisse finibus, turpis id faucibus gravida, lacus lectus placerat erat, sit amet semper felis
-                    tellus nec arcu.
-                    Sed aliquet, metus a eleifend aliquam, odio tellus blandit felis, quis porttitor ipsum erat
-                    imperdiet neque. <br>
-                    Nulla quis maximus eros. Duis velit erat, hendrerit in nisi nec, mattis malesuada eros. <br>
-                    Integer molestie eros eu lacinia convallis. <br>
-                    Nulla lorem elit, imperdiet non convallis sed, iaculis hendrerit purus. <br>
-                    Sed ultricies viverra diam. Vivamus a nisi luctus dui rutrum consectetur quis at elit. <br>
-                    Integer faucibus bibendum feugiat.
-                    <h4>
-            </section>
-        </article>
+        <div class="row">
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg"
+                        class="img-fluid">
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(131).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(118).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(128).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+
+            <div class="col-sm">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg">
+                    <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(133).jpg"
+                        class="img-fluid" />
+                </a>
+            </div>
+        </div>
     </main>
 
 </body>
