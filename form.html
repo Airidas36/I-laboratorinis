@@ -24,12 +24,13 @@
         <div class="collapse navbar-collapse" id="collapse_target">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
-                aria-haspopup="true" key="languages" aria-expanded="false">
+                    aria-haspopup="true" key="languages" aria-expanded="false">
                     Languages
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu" id="dropmenu">
-                    <a class="dropdown-item" key = "en" id = "en"><span class="flag-icon flag-icon-gb"> </span> English</a>
-                    <a class="dropdown-item" key="lt" id = "lt"><span class="flag-icon flag-icon-lt"> </span> Lithuanian</a>
+                    <a class="dropdown-item" key="en" id="en"><span class="flag-icon flag-icon-gb"> </span> English</a>
+                    <a class="dropdown-item" key="lt" id="lt"><span class="flag-icon flag-icon-lt"> </span>
+                        Lithuanian</a>
                 </div>
             </div>
             <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
@@ -59,15 +60,17 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
-                                <input type="text" data-translate="username_placeholder" name="username" class="form-control" placeholder="Username" key='username'>
+                                <input type="text" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key='username'>
                             </div>
                             <div class="form-group">
-                                <input type="password" data-translate = "password_placeholder" name="password" class="form-control" placeholder="Password"
-                                    key="password">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" id="modalsignin" key="modalsignin"> Sign In</button>
+                            <button type="submit" class="btn btn-success" id="modalsignin" key="modalsignin"> Sign
+                                In</button>
                         </div>
                     </div>
                 </div>
@@ -80,13 +83,16 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
-                                <input type="text" data-translate ="email_placeholder" name="email" class="form-control" placeholder="Email" key="email">
+                                <input type="text" data-translate="email_placeholder" name="email" class="form-control"
+                                    placeholder="Email" key="email">
                             </div>
                             <div class="form-group">
-                                <input type="username" data-translate="username_placeholder" name="username" class="form-control" placeholder="Username" key="username">
+                                <input type="username" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key="username">
                             </div>
                             <div class="form-group">
-                                <input type="password" data-translate = "password_placeholder" name="password" class="form-control" placeholder="Password" key="password">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -100,8 +106,9 @@
     <main id="reportmain">
         <article>
             <section>
-                <h1> <span style="display:block;" key="reporth1">  Report your problem here </span></h1>
-                <h2> <span style="display:block;" key="reporth2"> Click on the report button to begin submitting a report form  </span></h2>
+                <h1> <span style="display:block;" key="reporth1"> Report your problem here </span></h1>
+                <h2> <span style="display:block;" key="reporth2"> Click on the report button to begin submitting a
+                        report form </span></h2>
                 <button type="button" class="btn btn-primary" key='reportbtn' data-toggle="modal" data-target="#Report">
                     REPORT
                 </button>
@@ -124,20 +131,22 @@
                     <form class="needs-validation" novalidate>
                         <div class="form-group">
                             <i class="fas fa-envelope"></i>
-                            <label for="exampleInputEmail1" key = "label_email"> Enter your email address</label>
+                            <label for="exampleInputEmail1" key="label_email"> Enter your email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" data-translate = "email_placeholder" placeholder="Enter email" key="email" required>
+                                aria-describedby="emailHelp" data-translate="email_placeholder"
+                                placeholder="Enter email" key="email" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address
                             </div>
-                            <small id="emailHelp" key="email_help" class="form-text text-muted">We'll never share your email with anyone
+                            <small id="emailHelp" key="email_help" class="form-text text-muted">We'll never share your
+                                email with anyone
                                 else.</small>
                         </div>
                         <div class="form-group">
                             <i class="fas fa-id-card"></i>
                             <label for="exampleInputPassword1" key="label_password">Enter your password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1"
-                                data-translate = "password_placeholer" placeholder="Password" key="password" required>
+                                data-translate="password_placeholer" placeholder="Password" key="password" required>
                             <div class="invalid-feedback">
                                 Please enter a password
                             </div>
@@ -146,27 +155,30 @@
                             <i class="fas fa-comment"></i>
                             <label for="subject" key="label_subject"> Enter the subject</label>
                             <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp"
-                                data-translate="subject_placeholder" placeholder="Subject of your complain" key="subject" required>
+                                data-translate="subject_placeholder" placeholder="Subject of your complain"
+                                key="subject" required>
                             <div class="invalid-feedback">
                                 Subject is required
                             </div>
                         </div>
                         <div class="form-group">
                             <i class="fas fa-edit"></i>
-                            <label data-error="wrong" data-translate = "message_placeholder" data-success="right" for="form8" key="message">Your message</label>
+                            <label data-error="wrong" data-translate="message_placeholder" data-success="right"
+                                for="form8" key="message">Your message</label>
                             <textarea type="text" id="form8" class="md-textarea form-control" rows="4"
                                 required></textarea>
                             <div class="invalid-feedback">
                                 Message field is required
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary" key = "submit">Submit</button>
+                        <button type="submit" class="btn btn-primary" key="submit">Submit</button>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1" key="reply_check">Receive email as soon as you get a
+                        <label class="form-check-label" for="exampleCheck1" key="reply_check">Receive email as soon as
+                            you get a
                             reply</label>
                     </div>
                 </div>
