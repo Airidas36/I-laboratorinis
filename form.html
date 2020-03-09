@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="includes/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('css/img/izhiukas.jpg');
+        }
+    </style>
+    <title>Website</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
+                    aria-haspopup="true" key="languages" aria-expanded="false">
+                    Languages
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu" id="dropmenu">
+                    <a class="dropdown-item" key="en" id="en"><span class="flag-icon flag-icon-gb"> </span> English</a>
+                    <a class="dropdown-item" key="lt" id="lt"><span class="flag-icon flag-icon-lt"> </span>
+                        Lithuanian</a>
+                </div>
+            </div>
+            <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
+            <ul class="navbar-nav nav-left">
+                <li class="nav-item"><a class="nav-link" key="videos" href="videos.html"> VIDEOS</a></li>
+                <li class="nav-item"><a class="nav-link" key="tables" href="tables.html"> TABLES</a></li>
+                <li class="nav-item"><a class="nav-link" key="form" href="form.html"> FORM</a></li>
+                <li class="nav-item"><a class="nav-link" key="xml" href="xml.html"> XML</a></li>
+                <li class="nav-item"><a class="nav-link" key="gallery" href="gallery.html"> GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" key="list" href="list.html"> LIST</a></li>
+            </ul>
+            <div class="container jumbotron text-center">
+                <ul class="nav navbar-nav ml-auto" id="logincontent">
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal"
+                        key="signin" id="signin">SIGN
+                        IN</button>
+                    <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal"
+                        key="signup" id="signup">SIGN
+                        UP</button>
+                </ul>
+            </div>
+            <div class="modal fade" role="dialog" id="loginModal">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="signinform">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="text" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key='username'>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" id="modalsignin" key="modalsignin"> Sign
+                                In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" id="signupModal">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="signupform">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="text" data-translate="email_placeholder" name="email" class="form-control"
+                                    placeholder="Email" key="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="username" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key="username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" id="modalsignup" key="modalsignup"> Create
+                                Account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <main id="reportmain">
+        <article>
+            <section>
+                <h1> <span style="display:block;" key="reporth1"> Report your problem here </span></h1>
+                <h2> <span style="display:block;" key="reporth2"> Click on the report button to begin submitting a
+                        report form </span></h2>
+                <button type="button" class="btn btn-primary" key='reportbtn' data-toggle="modal" data-target="#Report">
+                    REPORT
+                </button>
+            </section>
+        </article>
+    </main>
+
+
+    <div class="modal fade" id="Report" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="reportcontent">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" key="report_title">Fill report</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i>
+                            <label for="exampleInputEmail1" key="label_email"> Enter your email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" data-translate="email_placeholder"
+                                placeholder="Enter email" key="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address
+                            </div>
+                            <small id="emailHelp" key="email_help" class="form-text text-muted">We'll never share your
+                                email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-id-card"></i>
+                            <label for="exampleInputPassword1" key="label_password">Enter your password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                data-translate="password_placeholer" placeholder="Password" key="password" required>
+                            <div class="invalid-feedback">
+                                Please enter a password
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-comment"></i>
+                            <label for="subject" key="label_subject"> Enter the subject</label>
+                            <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp"
+                                data-translate="subject_placeholder" placeholder="Subject of your complain"
+                                key="subject" required>
+                            <div class="invalid-feedback">
+                                Subject is required
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-edit"></i>
+                            <label data-error="wrong" data-translate="message_placeholder" data-success="right"
+                                for="form8" key="message">Your message</label>
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"
+                                required></textarea>
+                            <div class="invalid-feedback">
+                                Message field is required
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" key="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1" key="reply_check">Receive email as soon as
+                            you get a
+                            reply</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+</html>
