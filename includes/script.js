@@ -38,6 +38,13 @@ var arrLang = {
         'label_password' : "Enter your password",
         'label_subject' : "Enter the subject",
         'email_help' : "We'll never share your email with anyone else.",
+        'invalid_email':"Please enter a valid email address",
+        'invalid_password' : "Please enter a password",
+        'invalid_subject' : "Subject is required",
+        'invalid_message' : "Message field is required",
+        'motorcycle_list' : "List of Motorcycles",
+        'plane_list' : "List of Planes",
+        'car_list' : "List of Cars"
     },
     'lt': {
         'videos': 'VAIZDO IRAŠAI',
@@ -76,7 +83,14 @@ var arrLang = {
         'label_email' : "Įveskite savo elektroninį paštą",
         'label_password' : "Įveskite slaptažodį",
         'label_subject' : "Įrašykite temą",
-        'email_help' : "Jūsų elektroninio pašto nedalinsime niekam."
+        'email_help' : "Jūsų elektroninio pašto nedalinsime niekam.",
+        'invalid_email':"Įveskite egzistuojantį elektroninį paštą",
+        'invalid_password' : "Slaptažodis yra privalomas",
+        'invalid_subject' : "Pranešimo tema yra privaloma",
+        'invalid_message' : "Pranešimas yra privalomas",
+        'motorcycle_list' : "Motociklų sąrašas",
+        'plane_list' : "Lėktuvų sąrašas",
+        'car_list' : "Automobilių sąrašas"
     }
 };
 $(function () {
@@ -137,6 +151,12 @@ $(function () {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
     $('#dropdownMenu').each(function (index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.invalid-feedback').each(function (index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.list-group button').each(function (index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
 });
