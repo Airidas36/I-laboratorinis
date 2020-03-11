@@ -44,7 +44,10 @@ var arrLang = {
         'invalid_message' : "Message field is required",
         'motorcycle_list' : "List of Motorcycles",
         'plane_list' : "List of Planes",
-        'car_list' : "List of Cars"
+        'car_list' : "List of Cars",
+        'footpage' : "PAGES",
+        'info' : "INFO",
+        'contact' : "CONTACTS"
     },
     'lt': {
         'videos': 'VAIZDO IRAŠAI',
@@ -90,7 +93,10 @@ var arrLang = {
         'invalid_message' : "Pranešimas yra privalomas",
         'motorcycle_list' : "Motociklų sąrašas",
         'plane_list' : "Lėktuvų sąrašas",
-        'car_list' : "Automobilių sąrašas"
+        'car_list' : "Automobilių sąrašas",
+        'footpage' : "PUSLAPIAI",
+        'info' : "INFORMACIJA",
+        'contact' : "KONTAKTAI"
     }
 };
 $(function () {
@@ -157,6 +163,18 @@ $(function () {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
     $('.list-group button').each(function (index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('#footitems h5').each(function (index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('#footitems ul li p a').each(function (index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('#infobar h5').each(function (index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('#contacts h5').each(function (index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
 });
