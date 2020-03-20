@@ -447,3 +447,29 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
 {
     color:white;
 }
+
+#calculator
+{
+    margin-left:40%;
+}
+
+input[type="button"]
+{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin: 2px;
+    cursor:pointer;
+}
+
+.textview
+{
+    width:293px;
+    height:40px;
+    margin:5px;
+    font-size:27px;
+    padding:5px;
+    margin-left: 40.2%;
+    text-align: right;
+    pointer-events: none;
+}

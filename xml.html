@@ -105,22 +105,67 @@
     </nav>
 
     <main id="content" class="group" role="main">
-        <article>
-            <section>
-                <h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                    Curabitur velit dolor, auctor non convallis quis, cursus nec lacus.<br>
-                    Vivamus a maximus eros. Nunc tincidunt libero non dignissim egestas. <br>
-                    Duis commodo urna et ante porttitor consequat.<br>
-                    In malesuada tellus in bibendum aliquet. <br>
-                    In suscipit sapien et placerat feugiat. <br>
-                    In hac habitasse platea dictumst.<br>
-                    Ut accumsan nisi eros, id tempor justo fringilla nec. <br>
-                    Mauris iaculis et ipsum id suscipit.<br>
-                    Quisque vulputate consequat ultricies.<br>
-                    <h4>
-            </section>
-        </article>
+        <form name = "form" >
+            <input class="textview" id="textview">
+        </form>
+        <table id="calculator">
+            <tr>
+                <td>
+                    <input class="button" type="button" value="C">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="<">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="/">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class = "button" type = "button" value="7">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="8">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="9">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="-">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class = "button" type = "button" value="4">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="5">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="6">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="+">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class = "button" type = "button" value="1">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="2">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="3">
+                </td>
+                <td>
+                    <input class = "button" type = "button" value="=">
+                </td>
+            </tr>
+        </table>
     </main>
 </body>
 <footer class="page-footer font-small mdb-color lighten-3 pt-4">
@@ -212,7 +257,7 @@
     </div>
 
 </footer>
-
+<script src = "includes/calc.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
