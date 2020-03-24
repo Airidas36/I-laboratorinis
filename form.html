@@ -24,12 +24,13 @@
         <div class="collapse navbar-collapse" id="collapse_target">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                    aria-haspopup="true" key="languages" aria-expanded="false">
                     Languages
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu" id="dropmenu">
-                    <a class="dropdown-item" key = "en" id = "en"><span class="flag-icon flag-icon-gb"> </span> English</a>
-                    <a class="dropdown-item" key="lt" id = "lt"><span class="flag-icon flag-icon-lt"> </span> Lithuanian</a>
+                    <a class="dropdown-item" key="en" id="en"><span class="flag-icon flag-icon-gb"> </span> English</a>
+                    <a class="dropdown-item" key="lt" id="lt"><span class="flag-icon flag-icon-lt"> </span>
+                        Lithuanian</a>
                 </div>
             </div>
             <a class="navbar-brand" href="index.html"> <img src="css/img/logo.png"> </a>
@@ -59,14 +60,17 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
-                                <input type="text" name="username" class="form-control" placeholder="Username">
+                                <input type="text" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key='username'>
                             </div>
                             <div class="form-group">
-                                <input type="password" name="password" class="form-control" placeholder="Password">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" id="modalsignin"> Sign In</button>
+                            <button type="submit" class="btn btn-success" id="modalsignin" key="modalsignin"> Sign
+                                In</button>
                         </div>
                     </div>
                 </div>
@@ -79,34 +83,33 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
-                                <input type="text" name="email" class="form-control" placeholder="Email">
+                                <input type="text" data-translate="email_placeholder" name="email" class="form-control"
+                                    placeholder="Email" key="email">
                             </div>
                             <div class="form-group">
-                                <input type="username" name="username" class="form-control" placeholder="Username">
+                                <input type="username" data-translate="username_placeholder" name="username"
+                                    class="form-control" placeholder="Username" key="username">
                             </div>
                             <div class="form-group">
-                                <input type="password" name="password" class="form-control" placeholder="Password">
+                                <input type="password" data-translate="password_placeholder" name="password"
+                                    class="form-control" placeholder="Password" key="password">
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" id="modalsignup"> Create Account</button>
-                        </div>
-                        <div class="form-group form-check" id="agreement">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1"> I agree with <a class="link"
-                                    href="#">terms and conditions</a></label>
+                            <button type="submit" class="btn btn-success" id="modalsignup" key="modalsignup"> Create
+                                Account</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </nav>
     <main id="reportmain">
         <article>
             <section>
-                <h1> Report your problem here</h1>
-                <h2> Click on the report button to begin <br> submitting a report form</h2>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Report">
+                <h1> <span style="display:block;" key="reporth1"> Report your problem here </span></h1>
+                <h2> <span style="display:block;" key="reporth2"> Click on the report button to begin submitting a
+                        report form </span></h2>
+                <button type="button" class="btn btn-primary" key='reportbtn' data-toggle="modal" data-target="#Report">
                     REPORT
                 </button>
             </section>
@@ -119,7 +122,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content" id="reportcontent">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Fill report</h5>
+                    <h5 class="modal-title" id="exampleModalLabel" key="report_title">Fill report</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -128,49 +131,54 @@
                     <form class="needs-validation" novalidate>
                         <div class="form-group">
                             <i class="fas fa-envelope"></i>
-                            <label for="exampleInputEmail1"> Email address</label>
+                            <label for="exampleInputEmail1" key="label_email"> Enter your email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email" required>
-                            <div class="invalid-feedback">
+                                aria-describedby="emailHelp" data-translate="email_placeholder"
+                                placeholder="Enter email" key="email" required>
+                            <div class="invalid-feedback" key="invalid_email">
                                 Please enter a valid email address
                             </div>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            <small id="emailHelp" key="email_help" class="form-text text-muted">We'll never share your
+                                email with anyone
                                 else.</small>
                         </div>
                         <div class="form-group">
                             <i class="fas fa-id-card"></i>
-                            <label for="exampleInputPassword1">Password</label>
+                            <label for="exampleInputPassword1" key="label_password">Enter your password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password" required>
-                            <div class="invalid-feedback">
+                                data-translate="password_placeholer" placeholder="Password" key="password" required>
+                            <div class="invalid-feedback" key="invalid_password">
                                 Please enter a password
                             </div>
                         </div>
                         <div class="form-group">
                             <i class="fas fa-comment"></i>
-                            <label for="subject"> Subject</label>
+                            <label for="subject" key="label_subject"> Enter the subject</label>
                             <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp"
-                                placeholder="Subject of your complain" required>
-                            <div class="invalid-feedback">
+                                data-translate="subject_placeholder" placeholder="Subject of your complain"
+                                key="subject" required>
+                            <div class="invalid-feedback" key="invalid_subject">
                                 Subject is required
                             </div>
                         </div>
                         <div class="form-group">
                             <i class="fas fa-edit"></i>
-                            <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                            <label data-error="wrong" data-translate="message_placeholder" data-success="right"
+                                for="form8" key="message">Your message</label>
                             <textarea type="text" id="form8" class="md-textarea form-control" rows="4"
                                 required></textarea>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback" key="invalid_message">
                                 Message field is required
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" key="submit">Submit</button>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Receive email as soon as you get a
+                        <label class="form-check-label" for="exampleCheck1" key="reply_check">Receive email as soon as
+                            you get a
                             reply</label>
                     </div>
                 </div>
@@ -178,6 +186,96 @@
         </div>
     </div>
 </body>
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+    <div class="container text-center text-md-left">
+
+        <div class="row">
+
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1" id="infobar">
+
+                <h5 class="font-weight-bold text-uppercase mb-4" key="info">INFO</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident
+                    voluptate
+                    esse
+                    quasi, veritatis totam voluptas nostrum.</p>
+
+            </div>
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1" id="footitems">
+
+                <h5 class="font-weight-bold text-uppercase mb-4" key="footpage">PAGES</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <a href="videos.html" key="videos">VIDEOS</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="tables.html" key="tables">TABLES</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="form.html" key="form">FORM</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="gallery.html" key="gallery">GALLERY</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="list.html" key="list">LIST</a>
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1" id="contacts">
+
+                <h5 class="font-weight-bold text-uppercase mb-4" key="contact">CONTACT INFO</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <i class="fas fa-home mr-3"></i> Lietuva, Vilnius, VGTU</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i> airidas.sarkunas@gmail.com</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i> + 12 34 567 89</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fas fa-print mr-3"></i> + 12 34 567 89</p>
+                    </li>
+                </ul>
+
+            </div>
+
+            <hr class="clearfix w-100 d-md-none">
+
+        </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://github.com/Airidas36"> Github</a>
+    </div>
+
+</footer>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
