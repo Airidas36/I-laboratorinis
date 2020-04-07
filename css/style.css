@@ -426,6 +426,10 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
 .page-footer
 {
     background-color: rgba(134, 12, 248, 0.747);
+    height:360px;
+    bottom: 0px;
+    min-width: 100%;
+    height: fit-content;
 }
 
 .page-footer p
@@ -447,29 +451,39 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
 {
     color:white;
 }
-
-#calculator
+.footer-copyright.text-center.py-3
 {
-    margin-left:40%;
+    padding:0!important;
 }
+@media (min-width: 420px) {
+    .calculator {
+      width: 12em;
+    }
+    .viewer {
+      width: 8.5em;
+    }
+    button {
+      margin: 0.5em;
+    }
+  }
 
-input[type="button"]
-{
-    width: 70px;
-    height: 70px;
-    font-size: 30px;
-    margin: 2px;
-    cursor:pointer;
-}
+  .calculator {
+    font-size: 28px;
+    margin: 0 auto;
+    width: 10em;
+  }
 
-.textview
-{
-    width:293px;
-    height:40px;
-    margin:5px;
-    font-size:27px;
-    padding:5px;
-    margin-left: 40.2%;
-    text-align: right;
-    pointer-events: none;
-}
+  .calculator button  {
+    border: 0;
+    background: rgba(36, 54, 187, 0.28);
+    color: #ffffff;
+    width: 2em; /*problema čia*/
+    height: 2em; /* ir čia*/
+  }
+
+  #viewer
+  {
+      color: white!important;
+      width: 8.82em;
+      background: rgba(0, 0, 0, 0.548);
+  }

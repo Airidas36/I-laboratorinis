@@ -1,31 +1,101 @@
-document.querySelectorAll('input').forEach((btn) => {
-    btn.addEventListener('click', (e) => { 
-      const insertedValue = e.target.value;
-      if (insertedValue == "C") clear();
-      else if(insertedValue =="=") equal();
-      else if(insertedValue == "<") backspace();
-      else document.getElementById('textview').value += insertedValue;
-    }, false);
-  });
+(function() {
+    "use strict";
+    var el = function(element) {
+      if (element.charAt(0) === "#") { 
+        return document.querySelector(element);
+      }
+  
+      return document.querySelectorAll(element);
+    };
+    
+    var viewer = el("#viewer"), 
+      equals = el("#equals"),
+      nums = el(".num"), 
+      ops = el(".ops"), 
+      theNum = "", 
+      oldNum = "",
+      resultNum, 
+      operator; 
+  
+    var setNum = function() {
+      if (resultNum) {
+        theNum = this.getAttribute("data-num");
+        resultNum = "";
+      } else {
+        theNum += this.getAttribute("data-num");
+      }
+      if(document.getElementById("viewer").innerHTML.length >= 15 || viewer.innerHTML === "Num too big")
+      {
+        theNum =  "Num too big";
+      }
+       viewer.innerHTML = theNum;
+     
+    };
+  
+    var moveNum = function() {
+      oldNum = theNum;
+      theNum = "";
+      operator = this.getAttribute("data-ops");
+  
+      equals.setAttribute("data-result", "");
+    };
+    var displayNum = function() {
+      oldNum = parseFloat(oldNum);
+      theNum = parseFloat(theNum);
+      
+      switch (operator) {
+        case "plus":
+          resultNum = oldNum + theNum;
+          break;
+  
+        case "minus":
+          resultNum = oldNum - theNum;
+          break;
+  
+        case "times":
+          resultNum = oldNum * theNum;
+          break;
+  
+        case "divided by":
+          resultNum = oldNum / theNum;
+          break;
 
-function equal(){
-    var temp;
-    temp = document.getElementById("textview").value;
-    if(temp)
-    {
-        document.getElementById("textview").value = eval(temp);
+        default:
+          resultNum = theNum;
+      }
+  
+      if (!isFinite(resultNum)) {
+        if (isNaN(resultNum)) { 
+          resultNum = "Error";
+        } else { 
+          resultNum = "Error";
+        }
+      }
+      viewer.innerHTML = resultNum;
+      if(document.getElementById("viewer").innerHTML.length >= 15 || viewer.innerHTML === "Num too big")
+      {
+        viewer.innerHTML = "Num too big";
+      }
+      equals.setAttribute("data-result", resultNum);
+  
+      oldNum = 0;
+      theNum = resultNum;
+      
+    };
+    var clearAll = function() {
+      oldNum = "";
+      theNum = "";
+      viewer.innerHTML = "0";
+      equals.setAttribute("data-result", resultNum);
+    };
+    
+    for (var i = 0, l = nums.length; i < l; i++) {
+      nums[i].onclick = setNum;
     }
-}
-
-function clear()
-{
-    document.getElementById('textview').value = "";
-}
-
-function backspace()
-{
-    let value;
-    value = document.getElementById('textview').value;
-    value = value.substr(0, value.length-1);
-    document.getElementById('textview').value = value;
-}
+  
+    for (var i = 0, l = ops.length; i < l; i++) {
+      ops[i].onclick = moveNum;
+    }
+    equals.onclick = displayNum;
+    el("#clear").onclick = clearAll;
+  }());
